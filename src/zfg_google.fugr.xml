@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Google Cloud Fusion</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFG_GOOGLETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFG_GOOGLE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFM_TRIGGER_BIGQUERY</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Google</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>OBJTYPE</PARAMETER>
+       <TYP>SWETYPECOU-OBJTYPE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>OBJKEY</PARAMETER>
+       <TYP>SWEINSTCOU-OBJKEY</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>EVENT</PARAMETER>
+       <TYP>SWEINSTCOU-EVENT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>RECTYPE</PARAMETER>
+       <TYP>SWETYPECOU-RECTYPE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>EVENT_CONTAINER</PARAMETER>
+       <DBSTRUCT>SWCONT</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>OBJTYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Object Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OBJKEY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Object key</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EVENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Event</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RECTYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Name of Receiver Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EVENT_CONTAINER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Instance Structure</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
